@@ -87,25 +87,6 @@
 			position: relative;
 			left:190px;
 		}
-
-		.article {
-			overflow: hidden;
-		}
-		.truncation {
-			position: relative;
-			line-height: 1.2em;
-			height: 3.6em; /* 3 lines: 3 * 1.2em = 3.6 em */
-		}
-		.truncation:after {
-			content: "";
-			text-align: right;
-			position: absolute;
-			bottom: 0;
-			right: 0;
-			width: 70%;
-			height: 1.2em;
-			background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 50%);
-		}
 	</style>
 </head>
 <body>
@@ -121,15 +102,7 @@
 	<div class="wire"></div>
 	<div class="articles">
 		<h2>滴滴召开司机意见征求会：程维柳青出席听取意见</h2>
-		<p class="article truncation">好未来旗下英语品牌励步英语今日在北京举行发布会，励步英语总经理曹伟表示，围绕线上线
-下、爱与科技、语言素养三个关键点，励步英语将对幼儿和小学课程体系与教材全面升级，推
-出 3.0 版本的完整学习模式 ... 为了实现孩子的完整学习体验，全新线下线上结合的 3.0 完整
-学习产品采取 1+6 的完整学习路径，覆盖预习 - 学习 - 练习 - 应用 - 探索 - 浸泡六大环节
-... 每周孩子可以通过线下课专注语言体系化学习，搭配一次 AI 外教互动课强化语言的场景应
-用，另外还可以利用励步云学习 App 的智能学习管家，根据孩子学习进度与学习数据，每天
-智能推送课前动画导学、智能互动练习、分级阅读、音频视频等丰富语料，将学得与习得结合，
-提升语言实际应用能力。
-	</p>
+		<p>10 月 6 日下午，十多位司机师傅到滴滴公司，参加了司机意见征求会 ... 滴滴出行 CEO 程维、总裁柳青、CTO 张博、产品高级副总裁俞军、快捷事业群总经理陈汀以及各部门负责人作为滴滴一线客服，听取了司机师傅们意见和建议 ... 程维表示，滴滴将认真梳理大家的批评和建议，并逐步落实到各业务部门的实际工作当中。</p>
 	</div>
 	<div class="articles">
 		<h2>Facebook 推出针对 iPhone 的精简版应用</h2>
@@ -154,13 +127,5 @@
 		<a href=""><img src="images/dz.png" ></a>
 		<a href=""><img src="images/ypy.png" ></a>
 	</div>
-	<script>
-		const articles = document.querySelectorAll('.article')
-		for (let article of articles) {
-			article.addEventListener('click', (e) => {
-				e.target.classList.toggle('truncation')
-			})
-		}
-	</script>
 </body>
 </html>
