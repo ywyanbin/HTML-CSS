@@ -44,24 +44,15 @@ $(function(){
 
 /*按钮展开收回*/
 $(function(){
-	var $buttonone = $('.buttonone');
-	var $buttontwo = $('.buttontwo');
-	$buttonone.hide();
-	$('li').each(function(){
-		$buttontwo.on('click',function(){
-		$buttonone.show();
-		$buttontwo.hide();
-		$('p.article').removeClass('truncation');
+	$('.buttontwo').on('click',function(e){
+		if (e.target.innerHTML === '展开') {
+			e.target.innerHTML = '关闭'
+			$(e.target).parent().siblings('.text').find('.article').removeClass('truncation');
+		} else {
+			e.target.innerHTML = '展开'
+			$(e.target).parent().siblings('.text').find('.article').addClass('truncation');
+		}
 	});
-		
-	$buttonone.on('click',function(){
-		$buttonone.hide();
-		$buttontwo.show();
-		$('p.article').addClass('truncation');
-	});  
-		
-	});
-	
 });
 
 
