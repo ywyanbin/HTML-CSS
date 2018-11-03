@@ -260,22 +260,23 @@
 		var el3 = document.getElementById('three');
 		el3.innerHTML = '<p>' + times + '&nbsp | reviewer xxx</p>';
 	
-  /*	var flag = true , imgH , imgW;
-		var img = document.getElementsByClassName('bye');
-		img.onclick = function () {
-			imgH = img.height;
-			imgW = img.width;
-			if(flag){
-				flag = false;
-				img.height = imgH * 2;
-				img.width = imgW * 2;
-			}else{
-				flag = true;
-				img.height = imgH / 2;
-				img.width = imgW / 2;
-			}   			
-
-		}*/
+		var flag = true , imgH , imgW;
+		var images = document.querySelectorAll('.bye')
+		for (let img of images) {
+			img.addEventListener('click', function () {
+				imgH = img.height;
+				imgW = img.width;
+				if(flag){
+					flag = false;
+					img.height = imgH * 2;
+					img.width = imgW * 2;
+				}else{
+					flag = true;
+					img.height = imgH / 2;
+					img.width = imgW / 2;
+				}   			
+			})
+		}
 		
 		/*便签
 		var msg = '<div class=\"header1\"><a id=\"close\" href="#">close</a></div>';
