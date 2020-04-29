@@ -1,3 +1,4 @@
 # HTML-CSS
 html的一些例子
-Spinning Ferris cheel预览地址：https://ywyanbin.github.io/HTML-CSS/Spinning Ferris cheel/index.html
+Spinning Ferris cheel预览地址：https://ywyanbin.github.io/HTML-CSS/SpinningFerrischeel/index.html
+history预览地址：https://ywyanbin.github.io/HTML-CSS/history/index.html
